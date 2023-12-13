@@ -25,6 +25,6 @@ class View {
     }
 
     fun printPairs(curriculum: List<String>) {
-        
+
     }
 }
