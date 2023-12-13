@@ -1,0 +1,4 @@
+package pairmatching
+
+class MatchingService {
+}
