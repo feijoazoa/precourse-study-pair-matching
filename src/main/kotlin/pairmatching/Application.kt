@@ -1,5 +1,7 @@
 package pairmatching
 
+import pairmatching.controller.PairMatching
+
 fun main() {
-    TODO("프로그램 구현")
+    PairMatching().start()
 }

@@ -1,4 +1,8 @@
 package pairmatching.controller
 
-class pairmatching {
+class PairMatching {
+
+    fun start() {
+
+    }
 }
