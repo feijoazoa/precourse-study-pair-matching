@@ -19,12 +19,10 @@ class InputView {
     }
 }
 
-
-
 /*
 fun getService(): String {
         try {
-            val userinput = Console.readLine()
+            val userInput = Console.readLine()
             validation.validateServiceOption(userInput)
             return UserInput
         } catch (e: IllegalArgumentException) {
