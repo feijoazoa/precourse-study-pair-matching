@@ -18,8 +18,8 @@ class Data {
         return try {
             val read = FileReader(path)
             read.readText().split("\n")
-        } catch (e: Validation) {
-            throw IllegalArgumentException(e)
+        } catch (e: IllegalArgumentException) {
+            throw e
         }
     }
 }

@@ -11,5 +11,18 @@ class Validation {
         val inputs = input.split(", ")
         require(inputs.size == 3) {throw IllegalArgumentException("[ERROR] 과정, 레벨, 미션 모두 선택해 주세요.")}
         require(inputs[0] in Course.names()) { throw IllegalArgumentException("[ERROR] 존재 하는 커리큘럼을 선택해 주세요.")}
+        require(validateLevelMission(inputs)) {throw IllegalArgumentException("[ERROR] 존재 하는 커리큘럼을 선택해 주세요.")}
+    }
+
+    fun validateLevelMission(inputs: List<String>): Boolean {
+        if (inputs[1] !in Level.names()) {
+            return false
+        }
+        for (mission in Mission.values()) {
+            if(mission.getValue() == inputs[2] && mission.getLevel().value == inputs[1]) {
+                return true
+            }
+        }
+        return false
     }
 }

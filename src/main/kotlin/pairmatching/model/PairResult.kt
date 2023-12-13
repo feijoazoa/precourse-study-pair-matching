@@ -11,7 +11,7 @@ class PairResult(course: String, level: String, mission: String) {
             pairs.add(random)
         }
     }
-    
+
     fun getPairs() {
         val stringBuilder = StringBuilder()
         for (i in pairs.indices) {
