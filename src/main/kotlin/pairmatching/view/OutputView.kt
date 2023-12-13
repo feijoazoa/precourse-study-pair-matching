@@ -32,5 +32,4 @@ class OutputView {
         const val INPUT_EXAMPLE_MESSAGE = "ex) 백엔드, 레벨1, 자동차경주"
         const val LINE_BREAK = "\n"
     }
-    }
 }
